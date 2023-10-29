@@ -27,7 +27,7 @@ print(f"addrees  b = {hex(id(b))}")
 print(f"addrees  c = {hex(id(c))}")
 
 print(f" kita ubah data 0")
-c[1] = "gozzaki"
+c[1] = "gozzaki" # cara merubah data pada list index ke 1
 print(f"a = {a}")
 print(f"b = {b}")
 print(f"c = {c}")

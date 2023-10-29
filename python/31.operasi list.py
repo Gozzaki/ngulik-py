@@ -3,6 +3,7 @@ print  (f"data angka = \n{data_angka}")
 
 #count(data dalam list) akan menghitung jumlah data tersebut pada list
 
+
 jumlah_data_4 = data_angka.count(4)  #mengghitung jumlah data 4 pada list
 jumlah_data_7 = data_angka.count(7)  
 
