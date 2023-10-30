@@ -34,4 +34,3 @@ print(list_for_if)
 
 list_for_if = [i for i in range(0,10) if i%2 !=0] #membuat List Ganjil Menggunakan for if
 print(list_for_if)
-

@@ -3,7 +3,7 @@
 a = ["gozali", "gozzaki", "zakia"]
 print(f"a = {a}")
 
-b = a  # address akan sama 
+b = a  # address akan sama dengan list a 
 print(f"b = {b}")
 
 # kira akan merubah member a
@@ -18,7 +18,6 @@ print(f"b = {b}")
 print(f"addrees  a = {hex(id(a))}")
 print(f"addrees  b = {hex(id(b))}")
 
-
 #menduplikat list menggunakan copy
 print(f"memvuat list c dengat a.copy()")
 c = a.copy() #data baru dengan addres akan berbeda
@@ -31,12 +30,4 @@ c[1] = "gozzaki" # cara merubah data pada list index ke 1
 print(f"a = {a}")
 print(f"b = {b}")
 print(f"c = {c}")
-
-
-
-
-
-
-
-
 

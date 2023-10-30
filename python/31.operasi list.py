@@ -33,7 +33,3 @@ print(f"data short = {data}")
 data_angka.reverse()
 data.reverse()
 print(f" data rivers = \n{data_angka} \n {data} ")
-
-
-
-

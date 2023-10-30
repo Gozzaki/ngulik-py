@@ -26,7 +26,3 @@ print(f"peserta = {list_copy}")
 peserta_2[0] = "lielie"
 print(f"peserta = {list_copy}\n")
 print(f"peserta = {list_peserta}")
-
-
-
-
