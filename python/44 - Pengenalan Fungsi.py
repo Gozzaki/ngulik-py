@@ -6,4 +6,4 @@ def hello():
     print("helloo world")
 
 
-hello()
+hello() #di panggil harus sudah di definisikan di atas
