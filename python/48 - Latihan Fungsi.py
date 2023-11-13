@@ -29,14 +29,34 @@ def header():
     print(f"{'DAN KELILING PERSEGI PANJANG':^40}")
     print(f"{'-'*40:^40}")
 
+def input_user():
+    '''Fungsi Input User'''
+    panjang = int(input("Masukan Nilai Panjang : "))
+    lebar  = int(input("Masukan Nilai Lebar : "))
+    return lebar,panjang
+
+def hitung_luas(lebar,panjang):
+    '''Fungsi Luas'''
+    return lebar*panjang
+
+def hitung_keliling(lebar,panjang):
+    '''fungsi keliling'''
+    return 2*(lebar+panjang)
+
+def display(massege,value):
+    print(f"hasil perhitungan {massege} = {value }")
 while True:
     header()
+
+    LEBAR,PANJANG = input_user()
+    LUAS = hitung_luas(LEBAR,PANJANG)
+    KELILING = hitung_keliling(LEBAR,PANJANG)
+
+    display("luas",LUAS)
+    display("Keliling",KELILING)
+
     isContinue = input("apakah lanjut (Y/N)").upper()
     if isContinue == "N":
         break
-
-def input_user():
-    panjang = int(input("Masukan Nilai Panjang : "))
-    lebar  = int(input("Masukan Nilai Lebar : "))
-
+    
 print("Program Selesai TerimaKasih")
