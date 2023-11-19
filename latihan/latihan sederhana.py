@@ -1,49 +1,48 @@
 print("------STRUK BELANJA------")
-
 print("-----------------------")
 print("---List Harga Barang---")
 print("-----------------------")
-barang1 = input("Nama barang : ")
-harga1 = input("Harga barang : ")
 
-barang2 = input("Nama barang : ")
-harga2 = input("Harga barang : ")
+# Meminta input jumlah barang
+jumlah_barang = int(input("Masukkan jumlah barang: "))
 
-barang3 = input("Nama barang : ")
-harga3 = input("Harga barang : ")
+# Inisialisasi list untuk menyimpan nama dan harga barang
+daftar_barang = []
+daftar_harga = []
 
-barang4 = input("Nama barang : ")
-harga4 = input("Harga barang : ")
+# Menggunakan loop untuk mendapatkan input untuk setiap barang
+for i in range(jumlah_barang):
+    nama_barang = input(f"Nama barang {i + 1}: ")
+    harga_barang = float(input(f"Harga barang {i + 1}: "))
+    daftar_barang.append(nama_barang)
+    daftar_harga.append(harga_barang)
 
 print("-------------------------------")
 print("---Jumlah dan Harga Barang---")
 print("-------------------------------")
-jumlah1 = input(f"{barang1} x ")
-print("=", int(jumlah1) * int(harga1))
 
-jumlah2 = input(f"{barang2} x ")
-print("=", int(jumlah2) * int(harga2))
+# Inisialisasi total harga
+total_harga_semua_barang = 0
 
-jumlah3 = input(f"{barang3} x ")
-print("=", int(jumlah3) * int(harga3))
-
-jumlah4 = input(f"{barang4} x ")
-print("=", int(jumlah4) * int(harga4))
+# Menggunakan loop untuk mencetak jumlah dan harga setiap barang
+for i in range(jumlah_barang):
+    jumlah = int(input(f"{daftar_barang[i]} x "))
+    total_harga_barang = jumlah * daftar_harga[i]
+    print("=", total_harga_barang)
+    total_harga_semua_barang += total_harga_barang
 
 print("-------------------------")
 print("---Total Harga Barang---")
 print("-------------------------")
-hasil1 = (int(jumlah1) * int(harga1))
-hasil2 = (int(jumlah2) * int(harga2))
-hasil3 = (int(jumlah3) * int(harga3))
-hasil4 = (int(jumlah4) * int(harga4))
 
-total = (int(hasil1) + int(hasil2) + int(hasil3) + int(hasil4))
-print("Total harga = ", total)
+print("Total harga =", total_harga_semua_barang)
 print("-----------------")
 
 print("-----------------")
 print("!!! Diskon 10% !!!")
 print("-----------------")
-diskon = (total * 10) / 100
-print("TOTAL = ", total - diskon)
+
+# Menghitung dan mencetak total harga setelah diskon
+diskon = total_harga_semua_barang * 0.1
+total_setelah_diskon = total_harga_semua_barang - diskon
+print("TOTAL =", total_setelah_diskon)
