@@ -12,13 +12,13 @@ import os
 
 kolom_kode_paket = ["01", "02", "03", "04"]
 
-kolom_rute_perjalanan = ["Karawang - Pantai Pakis Jaya", "Karawang - Curug Cigentis - Gunung Sangga Buana",
-                         "Karawang - Candi Jiwa", "Karawang - Pantai Samudra", ]
+kolom_rute_perjalanan   =   ["Karawang - Pantai Pakis Jaya", "Karawang - Curug Cigentis - Gunung Sangga Buana",
+                            "Karawang - Candi Jiwa", "Karawang - Pantai Samudra", ]
 
 kolom_min_peserta = ["6 Orang", "6 Orang", "4 Orang", "5 Orang"]
 
-kolom_harga_perjalanan = ["Rp. 1.000.000",
-                          "Rp. 500.000", "Rp. 600.000", "Rp. 850.000"]
+kolom_harga_perjalanan   =  ["Rp. 1.000.000",
+                            "Rp. 500.000", "Rp. 600.000", "Rp. 850.000"]
 
 kolom_harga_perjalanan_int = [1_000_000, 500_000, 600_000, 850_000]
 

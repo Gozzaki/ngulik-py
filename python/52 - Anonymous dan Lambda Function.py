@@ -29,5 +29,41 @@ data_list.sort(key=panjang_nama)
 print(f"sorted list by panjang data list = {data_list}")
 
 #sort pakai lambda
-data_list = ['ali','zudueng','ucups']
-data_list.sort()
+data_list = ['aliii','zuduengg','ucupss']
+data_list.sort(key=lambda nama:len(nama))
+print(f"sorted panjang list by lambda = {data_list}")
+
+#filter pakai fungsi
+data_angka = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+def kurang_dari_lima(angka):
+    return angka < 5
+# data_angka_baru = list(filter(kurang_dari_lima,data_angka))
+data_angka_baru = list(filter(lambda x:x <16,data_angka))
+print(data_angka_baru)
+
+#kasus genap 
+data_genap = list(filter(lambda x: (x%2==0),data_angka))
+print(data_genap)
+
+#kasus ganjil 
+data_ganjil = list(filter(lambda x: (x%2!=0),data_angka))
+print(data_ganjil)
+
+# keipatan 3
+data_3 = list(filter(lambda x: (x%3==0),data_angka))
+print(data_3)
+
+# anonymous function
+# currying <- Haskel Curry
+
+
+
+# dengan currying menjadi
+
+def pangkat(n):
+    return lambda angka:angka ** n
+
+pangkat2 = pangkat(2)
+print(f"pangkat 2 = {pangkat2(5)}")
+
+
