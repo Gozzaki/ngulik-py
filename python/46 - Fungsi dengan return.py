@@ -27,7 +27,7 @@ print(a)
 
 # fungsi dengan return banyak
 
-def operasi_matematika(angka_1,angka_2):
+def operasi_matematika(angka_1:int,angka_2:int)->int:
     tambah = angka_1 + angka_2
     kurang = angka_1 - angka_2
     kali = angka_1 * angka_2
@@ -38,3 +38,11 @@ print(f"Hasil tambah ={k}")
 print(f"Hasil kurang = {l}")
 print(f"Hasil kali = {m}")
 print(f"Hasil bagi = {n}")
+
+def fungsi(*args):
+    angka1 = args[0]
+    angka2 = args[1]
+    return  angka1 + angka2
+
+fungsi(1,2)
+print(f"ii   {fungsi(1,3)}")
